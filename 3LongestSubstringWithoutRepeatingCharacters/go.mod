@@ -1,0 +1,3 @@
+module 3LongestSubstringWithoutRepeatingCharacters
+
+go 1.19

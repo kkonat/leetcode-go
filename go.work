@@ -2,9 +2,11 @@ go 1.19
 
 use (
 	./2AddTwoNumbers
+	./4medianOfTwoSortedArrays
 	./7reverse-integer
 	./13roman-to-integer
 	./14longest-common-prefix
 	./20ValidParentheses
+	./3LongestSubstringWithoutRepeatingCharacters
 
 )
