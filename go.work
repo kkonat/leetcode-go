@@ -1,14 +1,15 @@
 go 1.19
 
 use (
-	./2AddTwoNumbers
-	./3LongestSubstringWithoutRepeatingCharacters
-	./4medianOfTwoSortedArrays
-	./7reverse-integer
-	./8stringToInteger
 	./13roman-to-integer
 	./14longest-common-prefix
 	./20ValidParentheses
 	./23MegeKSortedLists
+	./24SwapNodesInPairs
+	./2AddTwoNumbers
 	./380InsertDeleteGetRandom
+	./3LongestSubstringWithoutRepeatingCharacters
+	./4medianOfTwoSortedArrays
+	./7reverse-integer
+	./8stringToInteger
 )
