@@ -1,6 +1,7 @@
 go 1.19
 
 use (
+	./1207UniqueNumberOfOccurrences
 	./13roman-to-integer
 	./14longest-common-prefix
 	./20ValidParentheses
