@@ -7,28 +7,37 @@ type ListNode struct {
 	Next *ListNode
 }
 
-func swap(e1 **ListNode) {
-	olde1 := (*e1)
-	e2 := olde1.Next
+func swap(prev **ListNode) {
+	e1 := (*prev).Next
+	e2 := e1.Next
+	if e2 == nil {
+		return
+	}
 	e3 := e2.Next
 
-	(*e1).Next = e3
-	e2.Next = olde1
-	*e1 = e3
+	(*prev).Next = e2
+	e2.Next = e1
+	e1.Next = e3
 }
+
 func swapPairs(head *ListNode) *ListNode {
 
 	preHead := &ListNode{0, head}
 
-	ptr := preHead.Next
-
-	for ptr != nil && ptr.Next != nil {
+	for ptr := preHead; ptr != nil && ptr.Next != nil; ptr = ptr.Next {
 		swap(&ptr)
+		ptr = ptr.Next
+		if ptr.Next == nil {
+			return preHead.Next
+		}
 	}
 	return preHead.Next
 }
 
 func createList(a []int) *ListNode {
+	if len(a) == 0 {
+		return nil
+	}
 	head := &ListNode{a[0], nil}
 	prev := head
 	for i := 1; i < len(a); i++ {
@@ -38,11 +47,14 @@ func createList(a []int) *ListNode {
 	return head
 }
 func (l *ListNode) toString() string {
+
 	str := "["
-	ptr := l
-	for ptr != nil {
-		str += fmt.Sprint(ptr.Val) + " "
-		ptr = ptr.Next
+	if l != nil {
+		ptr := l
+		for ptr != nil {
+			str += fmt.Sprint(ptr.Val) + " "
+			ptr = ptr.Next
+		}
 	}
 	str += "]"
 	return str
@@ -51,6 +63,6 @@ func (l *ListNode) toString() string {
 func main() {
 	h := createList([]int{1, 2, 3, 4})
 	fmt.Println(h.toString())
-	swapPairs(h)
+	h = swapPairs(h)
 	fmt.Println(h.toString())
 }
