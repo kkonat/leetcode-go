@@ -4,6 +4,7 @@ use (
 	./1207UniqueNumberOfOccurrences
 	./13roman-to-integer
 	./14longest-common-prefix
+	./1657DetermineifTwoStringsAreClose
 	./1704DetermineIfStringHalvesAreAlike
 	./20ValidParentheses
 	./23MegeKSortedLists
