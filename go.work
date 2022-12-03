@@ -12,6 +12,7 @@ use (
 	./2AddTwoNumbers
 	./380InsertDeleteGetRandom
 	./3LongestSubstringWithoutRepeatingCharacters
+	./451SortCharactersByFrequency
 	./4medianOfTwoSortedArrays
 	./7reverse-integer
 	./8stringToInteger
