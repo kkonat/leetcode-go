@@ -1,13 +1,17 @@
 go 1.19
 
 use (
+	./1028RecoverTreeFromTraversal
 	./1207UniqueNumberOfOccurrences
+	./1339MaximumProductofSplittedBinaryTree
 	./13roman-to-integer
 	./14longest-common-prefix
 	./1657DetermineifTwoStringsAreClose
 	./1704DetermineIfStringHalvesAreAlike
+	./19RemoveNthNodeFromEndofList
 	./20ValidParentheses
 	./2256MinimumAverageDifference
+	./22GenerateParentheses
 	./23MegeKSortedLists
 	./24SwapNodesInPairs
 	./2AddTwoNumbers
